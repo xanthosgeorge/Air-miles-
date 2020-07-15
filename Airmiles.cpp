@@ -9,32 +9,30 @@ private:
 	string code;
 	float km, pontoi;
 public:
-	void maker(string& code, float& km, float& pontoi) {
-		code = "";
-		km = 2000;
-		pontoi = 2000;
+	void Karta(string code,float km , float pontoi) {
+		this.code = code;
+		this.km = km;
+		this.pontoi = pontoi;
 
 	}
-	void getcode(string code) {
-		cout << code;
+	string Getcode() {
+		return this.code;
 
 	}
-	void getpontoi(float pontoi) {
-		cout << pontoi;
+	float getpontoi() {
+		return this.pontoi;
 
 	}
-	void getkm(float km) {
-		cout << km;
+	float getkm() {
+		return this.km;
 	}
-	void setpontoi(float &pontoi) {
-		float newpontoi = 0;
-		pontoi = newpontoi + pontoi;
+	void setpontoi(float pontoi) {
+		this.pontoi = pontoi + pontoi
 	}
-	void setKm(float& km) {
-		float newkm = 0;
-		km = newkm + km;
+	void setKm(float  km) {
+		this.km = km + km;
 	}
-	void print(float &pontoi) {
+	void GetPontoi(float &pontoi) {
 		if (pontoi < 5000) {
 			cout << "You are not eligible to gift yet" << endl;
 		}
@@ -45,7 +43,7 @@ public:
 			cout << "Free trip !!!" << endl;
 		}
 	}
-	void agora(float &pontoi) {
+	void agora(float pontoi) {
 		cout << "How much money do you want to give??" << endl;
 		float lefta, newpontoi2;
 		cin >> lefta;
